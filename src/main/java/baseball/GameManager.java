@@ -23,9 +23,9 @@ public class GameManager {
 
     private boolean checkNextRound(List<Integer> gameResult) {
         if (gameResult.get(0) == 3 && gameResult.get(1) == 0) {
-            return true;
+            return false;
         }
-        return false;
+        return true;
     }
 
 }
