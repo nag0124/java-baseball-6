@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Screen {
 
-    public void print(List<Integer> gameResult) {
+    public void printResult(List<Integer> gameResult) {
         int strikeCount = gameResult.get(0);
         int ballCount = gameResult.get(1);
 
@@ -16,6 +16,10 @@ public class Screen {
             System.out.println("낫싱");
         }
         System.out.println(ballCount + "볼 " + strikeCount + "스트라이크");
+    }
+
+    public void printStart() {
+        System.out.println("숫자 야구 게임을 시작합니다.");
     }
 
 }
